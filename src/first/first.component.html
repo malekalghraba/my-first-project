@@ -1,0 +1,22 @@
+ <!-- string banding-->
+
+<p>{{ name }}</p>
+<p>{{ age }}</p>
+<!--data banding-->
+<img [src] = 'imgurl' >
+<!-- event banding --> 
+<button (click)=" change() ">click me</button>
+<!-- two way databanding-->
+<br>
+<input type="text" [(ngModel)]="text">
+<p>{{ text }}</p> 
+<div class="face-snap-card">
+<h2>{{ title }}</h2>
+<p>Mis en ligne le {{ createdDate }}</p>
+<p>{{ description }}</p>
+
+<p>
+    <button (click)="onAddSnap()">{{ buttonText }}</button>
+    🤌 {{ snaps }}
+  </p>
+</div>
