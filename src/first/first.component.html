@@ -1,9 +1,12 @@
+<div class="content">
  <!-- string banding-->
-
+<div>
 <p>{{ name }}</p>
 <p>{{ age }}</p>
+</div><div>
 <!--data banding-->
-<img [src] = 'imgurl' >
+<img [src] = 'imgurl'>
+</div><div>
 <!-- event banding --> 
 <button (click)=" change() ">click me</button>
 <!-- two way databanding-->
@@ -14,9 +17,10 @@
 <h2>{{ title }}</h2>
 <p>Mis en ligne le {{ createdDate }}</p>
 <p>{{ description }}</p>
+<!--snap add 1 -->
 
 <p>
     <button (click)="onAddSnap()">{{ buttonText }}</button>
     🤌 {{ snaps }}
   </p>
-</div>
+</div></div>
