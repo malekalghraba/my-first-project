@@ -1,12 +1,27 @@
 <div class="content">
+<div class="row">
  <!-- string banding-->
-<div>
-<p>{{ name }}</p>
-<p>{{ age }}</p>
-</div><div>
+  <div class="col-md-4">
+   <p>{{ user.name }}</p>
+   <p>{{user.age }}</p>
+ <!-- a chaque clik limage disparait ou appatrait-->
+  <ng-container *ngIf="im === true">
+
+    <img [src]="imgurl" class="img-fluid">
+  </ng-container> 
+
+   <ng-container>
+  
+  <h1 *ngFor= " let item of cars "  >{{item}}</h1>
+  
+  <button (click)=" hidden() ">click me</button>
+</ng-container>
+</div>
+<div class="col-md-4">
 <!--data banding-->
-<img [src] = 'imgurl'>
-</div><div>
+<img [src] = 'imgurl' class="img-fluid">
+</div>
+<div class="col-md-4">
 <!-- event banding --> 
 <button (click)=" change() ">click me</button>
 <!-- two way databanding-->
@@ -23,4 +38,5 @@
     <button (click)="onAddSnap()">{{ buttonText }}</button>
     🤌 {{ snaps }}
   </p>
+</div>
 </div></div>
